@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="Decryption Page"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="normal" >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0"
+                android:text="Enter the Key:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:typeface="normal" />
+            <EditText
+                android:id="@+id/decryption_key"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" 
+                android:typeface="normal"
+                android:layout_marginLeft="15dp"
+                />
+            <View 
+			    android:layout_height="2dp"
+			    android:layout_width="fill_parent"
+			    android:background="#3b5998"
+			    />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0"
+                android:text="Message to be Decrpted:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:typeface="normal" />
+
+            <EditText
+                android:id="@+id/decryption_message"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" 
+                android:typeface="normal"
+                android:layout_marginLeft="15dp" 
+                />
+            <Button
+                android:id="@+id/decrypt_message_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0"
+                android:text="Decrypt Message"
+                android:typeface="normal" />
+            <View 
+			    android:layout_height="2dp"
+			    android:layout_width="fill_parent"
+			    android:background="#3b5998"
+			    />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0"
+                android:text="Decrypted Message:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:typeface="normal" />
+
+            <EditText
+                android:id="@+id/decrypted_message"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" 
+                android:typeface="normal" 
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

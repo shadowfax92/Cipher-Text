@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="Encryption Page"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="normal" >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0"
+                android:text="Enter the Key:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:typeface="monospace" />
+            <EditText
+                android:id="@+id/encryption_key"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" 
+                android:typeface="normal" 
+                />
+            <View 
+			    android:layout_height="2dp"
+			    android:layout_width="fill_parent"
+			    android:background="#3b5998"
+			    />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0"
+                android:text="Enter the Message here:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/encryption_message"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" 
+                android:typeface="normal" 
+                />
+            <Button
+                android:id="@+id/encrypt_message_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0"
+                android:text="Encrypt the Message"
+                android:typeface="monospace" />
+            <View 
+			    android:layout_height="2dp"
+			    android:layout_width="fill_parent"
+			    android:background="#3b5998"
+			    />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0"
+                android:text="Encrypted Message:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:typeface="normal" />
+
+            <EditText
+                android:id="@+id/encryption_message_output"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" 
+                android:typeface="normal" 
+                />
+            <Button
+                android:id="@+id/send_encrypted_message_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0"
+                android:text="Send Encrypted Message"
+                android:typeface="normal" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
